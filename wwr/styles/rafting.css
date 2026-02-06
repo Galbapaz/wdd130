@@ -34,9 +34,6 @@ header {
     align-items: center;
     background-color: var(--primary-color);
     padding: 1rem;
-}
-
-header {
     color: var(--light-color);
 }
 
@@ -173,7 +170,6 @@ footer p {
     font-weight: bold;
 }
 
-/* Social media */
 .socialmedia {
     display: flex;
     gap: 1rem;
