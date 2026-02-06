@@ -36,6 +36,18 @@ header {
     padding: 1rem;
 }
 
+header {
+    color: var(--light-color);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 header img {
     width: 90px;
     padding: 4px;
