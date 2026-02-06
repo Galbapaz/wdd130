@@ -3,6 +3,7 @@
     --secondary-color: #f4a261;
     --accent1-color: #264653;
     --accent2-color: #e9c46a;
+    --light-color: #ffffff;
 
     --heading-font: "Times New Roman", Georgia, serif;
     --body-font: Arial, Helvetica, sans-serif;
@@ -37,10 +38,10 @@ header {
 
 header img {
     width: 90px;
+    padding: 4px;
+    background-color: var(--light-color);
     border: 3px solid var(--accent2-color);
     border-radius: 8px;
-    padding: 4px;
-    background-color: #fff;
 }
 
 nav ul {
@@ -57,7 +58,7 @@ nav a {
     padding: 0.5rem 1rem;
     font-weight: bold;
     border-radius: 6px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 nav a:hover {
@@ -85,8 +86,8 @@ h2 {
     top: 1rem;
     width: 100%;
     text-align: center;
-    background-color: rgba(38, 70, 83, 0.8);
-    color: #fff;
+    background-color: rgba(38, 70, 83, 0.85);
+    color: var(--light-color);
     padding: 0.5rem;
 }
 
@@ -129,13 +130,12 @@ h2 {
 
 .adventure-gallery {
     display: flex;
-    justify-content: space-between;
     gap: 1rem;
     margin-top: 1rem;
 }
 
 .adventure-gallery figure {
-    width: 100%;
+    flex: 1;
 }
 
 .adventure-gallery img {
@@ -161,6 +161,7 @@ footer p {
     font-weight: bold;
 }
 
+/* Social media */
 .socialmedia {
     display: flex;
     gap: 1rem;
