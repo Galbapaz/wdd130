@@ -354,3 +354,70 @@ footer {
 .grid-item h3 {
     margin-top: 1rem;
 }
+
+/* TRIPS HERO */
+.trips-hero {
+    position: relative;
+}
+
+.trips-hero img {
+    width: 100%;
+    display: block;
+}
+
+.trips-hero h1 {
+    position: absolute;
+    bottom: 30%;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(38, 70, 83, 0.85);
+    color: white;
+    padding: 1rem;
+}
+
+/* TRIPS CTA */
+.trips-cta {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: var(--accent2-color);
+}
+
+/* TRIP GRID */
+.trip-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.trip-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.trip-card h3 {
+    margin-top: 1rem;
+}
+
+/* TABLE SECTION */
+.trip-table-section {
+    margin: 3rem 0;
+}
+
+.trip-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+}
+
+.trip-table th,
+.trip-table td {
+    border: 1px solid #ccc;
+    padding: 0.8rem;
+    text-align: center;
+}
+
+.trip-table th {
+    background-color: var(--primary-color);
+    color: white;
+}
