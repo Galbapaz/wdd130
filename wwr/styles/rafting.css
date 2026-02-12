@@ -9,7 +9,9 @@
     --body-font: Arial, Helvetica, sans-serif;
 }
 
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -24,12 +26,12 @@ body {
 header,
 footer {
     width: 100%;
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
 }
 
 header {
-    color: white;
     padding: 1rem 0;
-    width: 100%;
 }
 
 .header-container {
@@ -37,27 +39,7 @@ header {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-
     align-items: center;
-
-}
-
-header nav a {
-    background-color: #f4a261;
-    color: #000;
-}
-
-main {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 header img {
@@ -85,7 +67,13 @@ nav a {
 }
 
 nav a:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 h1,
@@ -171,34 +159,6 @@ h2 {
     font-weight: bold;
 }
 
-footer {
-    background-color: var(--secondary-color);
-    padding: 1.5rem 0;
-    margin-top: 2rem;
-    width: 100%;
-}
-
-.footer-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-footer p {
-    font-weight: bold;
-}
-
-.socialmedia {
-    display: flex;
-    gap: 1rem;
-}
-
-.socialmedia img {
-    width: 32px;
-}
-
 .employee-gallery {
     display: flex;
     justify-content: space-around;
@@ -218,7 +178,6 @@ footer p {
     height: 160px;
     object-fit: cover;
     border-radius: 15px;
-
 }
 
 form {
@@ -281,7 +240,6 @@ fieldset {
 
 .radio-group {
     margin-left: 0.5rem;
-
 }
 
 .radio-group label {
@@ -312,4 +270,26 @@ fieldset {
     height: 500px;
     border-radius: 12px;
     border: none;
+}
+
+footer {
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 1rem;
+}
+
+.socialmedia img {
+    width: 32px;
 }
