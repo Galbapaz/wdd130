@@ -293,3 +293,64 @@ footer {
 .socialmedia img {
     width: 32px;
 }
+
+.home-hero {
+    position: relative;
+}
+
+.home-hero img {
+    width: 100%;
+    display: block;
+}
+
+.home-hero h1 {
+    position: absolute;
+    bottom: 30%;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(38, 70, 83, 0.85);
+    color: white;
+    padding: 1rem;
+}
+
+.cta {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: var(--accent2-color);
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.cta-button:hover {
+    background-color: var(--accent1-color);
+}
+
+.newsletter {
+    margin: 3rem auto;
+    max-width: 600px;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.grid-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.grid-item h3 {
+    margin-top: 1rem;
+}
