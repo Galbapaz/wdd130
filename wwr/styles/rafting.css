@@ -27,7 +27,7 @@ footer {
 }
 
 header {
-    background-color: var(--primary-color);
+    color: white;
     padding: 1rem 0;
     width: 100%;
 }
@@ -40,6 +40,11 @@ header {
 
     align-items: center;
 
+}
+
+header nav a {
+    background-color: #f4a261;
+    color: #000;
 }
 
 main {
